@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-   
+
+
 /*Header total y logo*/
 
 header {
@@ -152,27 +153,39 @@ header {
     color: #1779ba!important;
     text-decoration: none;
     margin-right: 5px;
+    margin-left: 5px;
 }
+
+/*contenedor secciones*/
+.fixer::before, .fixer::after {
+    content: " ";
+    display: table;
+    box-sizing: border-box;
+}
+
+
+
 
 
 
 /*Seccion de comunicacion*/
 
-.contenedor_de_seccion{
+.seccion_comunicacion .contenedor{
     display: block;
-    width: 1400px;
-    margin: 0 auto;
-    max-width: calc(100% - 40px);
-}
 
+}
 .comunicacion_social{
     width: 51%;
+    float: left;
     padding-top: 33px;
     padding-right: 35px;
     max-width: 610px;
-    float: left;
 }
-.linea_heading {
+.comunicacion_social h3 {
+    margin: 0 0 20px 0;
+}
+/*Linea*/
+.linea_heading{
     text-align: center;
     position: relative;
     margin-bottom: 40px;
@@ -197,55 +210,57 @@ header {
     top: 16px;
     z-index: -1;
 }
-.comunicacion_social h3 {
-    margin: 0 0 20px 0;
-}
-
-.comunicacion_imagen{
-    margin-top: -46px;
+/* imagen */
+.imagen_comunicacion {
     width: 49%;
     float: right;
+    margin-top: -46px;
 }
-.comunicacion_imagen img{
+.imagen_comunicacion img {
     width: 100%;
-    opacity: 1!important;
-    transition: opacity .4s ease;
-    height: auto;
-
 }
-.comunicacion_imagen_informacion{
+
+/*informacion imagen*/
+
+.informacion_imagen_comunicacion
+{
     background: #617989;
 }
-.comunicacion_imagen_informacion ul {
+.informacion_imagen_comunicacion ul {
     margin: 0;
     padding: 15px 30px 5px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
-.comunicacion_imagen_informacion ul li {
+.informacion_imagen_comunicacion ul li {
     font-size: 16px;
     color: #fff;
     padding-right: 19px;
     line-height: 25px;
     padding-bottom: 10px;
 }
-.comunicacion_imagen_informacion ul li span {
+.informacion_imagen_comunicacion ul li span {
     font-weight: 700;
     margin-right: 5px;
 }
 
-.comunicacion_contenido{
+/*Contenido Informacion Comunicacion*/
+.contenido_comunicacion {
     width: 51%;
     float: left;
     padding-right: 35px;
     max-width: 610px;
+}
+.comunicacion_contenido{
     margin: 0 0 59px 0;
 }
+
 .comunicacion_contenido p {
     line-height: 27px;
     margin: 0 0 15px 0;
 }
+
 .comunicacion_contenido .button {
     min-width: 276px;
     margin-right: 20px;
@@ -258,6 +273,16 @@ header {
 
 
 /* Globales */
+
+.contenedor{
+    width: 1400px;
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 main{
     display: block;
@@ -321,4 +346,7 @@ h3{
     line-height: 58px;
     font-weight: 900;
     color: #00233b;
+}
+b, strong {
+    font-weight: bolder;
 }
