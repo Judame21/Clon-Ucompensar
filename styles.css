@@ -352,6 +352,41 @@ header {
     line-height: 18px;
 }
 
+/*Seccion campo laboral*/
+.seccion_campo{
+    padding-top: 75px;
+    margin-bottom: 68px;
+}
+.seccion_campo .contenedor {
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.seccion_campo .campo_texto{
+    width: 34%;
+    padding-right: 24px;
+}
+.campo_heading{
+    margin: 0 0 32px 0;
+}
+
+.seccion_campo h3 {
+    margin: 0 0 7px 0;
+}
+
+.seccion_campo .campo_imagen {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo_imagen img {
+    max-width: calc(50% - 8px);
+    width: 100%;
+}
+
+
+
 
 
 
