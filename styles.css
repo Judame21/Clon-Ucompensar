@@ -87,6 +87,165 @@ header {
 .menu_secundario>li>a:hover{
     color: #f60;
 }
+.menu_secundario>li:hover>ul {
+    display: block;
+}
+.menu_secundario>li>ul {
+    background-color: #fff;
+    border: 1px solid rgb(218,218,218);
+    position: absolute;
+    top: 100%;
+    width: 337px;
+    display: block;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+.menu_secundario>li>ul>li {
+   
+    position: static;
+}
+.sub_menu {
+    display: none;
+}
+.cmp-main-menu>li>a {
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+    padding: 30px 0;
+    display: block;
+    font-size: 18px;
+}
+
+.menu_secundario>li>ul li:hover>a {
+    font-weight: 700;
+}
+
+.menu_secundario>li>ul li a {
+    font-size: 18px;
+    padding: 8px 30px 8px 32px;
+    color: rgb(0,35,59);
+    line-height: 32px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+
+.menu_secundario>li.program-dd>ul {
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    border: 0;
+}
+
+.menu_secundario>li.program-dd ul {
+    list-style-type: none;
+    padding: 120px 0 0 0;
+}
+.menu_secundario>li.program-dd>ul {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu_secundario>li.universidad>ul:before {
+    content: "La Universidad";
+}
+.menu_secundario>li.programas>ul:before {
+    content: "Programas";
+}
+
+.menu_secundario>li.program-dd>ul:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+}
+
+.menu_secundario>li.program-dd>ul>li {
+    width: 20%;
+    position: static;
+}
+.menu_secundario>li.program-dd>ul>li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: #f60;
+    top: 85px;
+    left: 0;
+}
+
+.menu_secundario>li.program-dd>ul>li>ul>li>ul {
+    width: 150%;
+}
+.menu_secundario>li.program-dd>ul>li ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-height: 100%;
+    width: 100%;
+    margin-left: 0;
+}
+
+.menu_secundario>li.program-dd>ul li.menu-item-has-children>a:after {
+    background: url(Assets/slider-orange-mob-right-arrow.svg) no-repeat center center;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    position: absolute;
+    content: '';
+    right: 0;
+    margin-top: -18px;
+    
+}
+
+
+.menu_secundario>li.program-dd>ul>li ul {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 20%;
+    display: none;
+    min-height: 100%;
+    margin-left: 0;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.menu_secundario>li.program-dd>ul li:hover>ul {
+    display: block;
+}
+.menu_secundario>li.program-dd>ul>li>ul>li {
+    position: static;
+}
+.menu_secundario>li.program-dd>ul:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    min-height: 821px;
+    background: #fff;
+    transform: translatex(-50%);
+    z-index: -1;
+}
+.menu_secundario>li.program-dd>ul li>a:hover {
+    background: #ffe8d9;
+    font-weight: 700;
+    color: #f60;
+}
+
+
+
+
+
 
 .search_icon {
     background: rgb(255,102,0) url(Assets/search-icon.svg) no-repeat center center;
@@ -693,4 +852,8 @@ h3{
 }
 b, strong {
     font-weight: bolder;
+}
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0;
+    margin-top: 0;
 }
